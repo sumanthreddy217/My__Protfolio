@@ -1,0 +1,209 @@
+/* Mobile Responsive Adjustments (Max Width: 480px) */
+
+/* ----------------------------------------------- */
+/* ---------- Mobile Responsive design ----------- */
+
+
+@media (max-width: 752px) {
+
+    /* ----- ===== -----> about Section <----- ===== ----- */
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .profile-d{
+        display: none;
+    }
+
+    .profile-m {
+        display: block;
+        border: none;
+        margin-top: 1.2rem;
+    }
+
+    .about-container {
+        border: none;
+        flex-direction: column;
+    }
+
+    .about-container:hover{
+        box-shadow: none;
+        transform: none;
+    }
+
+    .ab-h1 {
+        width: 420px;
+        font-size: 1.6rem;
+    }
+
+    .ab-h3 {
+        margin: 0.7rem 0;
+        font-size: 1.3rem;
+    }
+
+    .ab-p {
+        font-size: 1rem;
+    }
+
+
+    /* ----- ===== -----> Education Section <----- ===== ----- */
+    .education-section {
+        display: flex;
+        margin-top: 1rem;
+    
+    }
+
+    .education-container {
+        border: none;
+        box-shadow: none;
+    }
+
+    .ed-h1 {
+        font-size: 2.3rem;
+    }
+
+    .education-boxes {
+        flex-direction: column;
+    }
+
+    .education-boxes h3 {
+        font-size: 1.6rem;
+    }
+
+    .education-boxes p{
+        font-size: 1rem;
+    }
+
+
+    /* ----- ===== -----> skills Section <----- ===== ----- */
+    
+    .skills-container {
+        box-shadow:none;
+        border:none;
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin-top: 0rem;
+    }
+
+    .skill-title {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    .skills-content {
+        flex-direction: column; /* Stack lists vertically */
+        gap: 20px;
+    }
+
+    .tree {
+        width: 310px; /* Full width for smaller screens */
+        margin: 0.5rem auto;
+    }
+
+    .tree li {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .skill {
+        font-size: 0.85rem; /* Smaller skill box */
+    }
+
+
+    /* ----- ===== -----> certificate Section <----- ===== ----- */
+    .certificate-section {
+        display: none;
+    }
+
+    /* ----- ===== -----> mobile - certificate Section <----- ===== ----- */
+    .certificate-section2 {
+        display: block;
+        margin-top: 0rem;
+    }
+
+    .certificates-container {
+        margin-top: 5rem;
+    }
+
+    .last-card {
+        height: 255px;
+        margin-left: 1rem;
+    }
+
+    .buttons2 {
+        width: 100px;
+    }
+
+
+
+    /* ----- ===== -----> contact Section <----- ===== ----- */
+    .contact-section {
+        display: fex;
+
+    }
+
+    .contact-container {
+        border: none;
+        box-shadow: none;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        margin-left: 1.5rem;
+        height: 200px;
+        box-shadow: 0 5px 7px #ffffff5a;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .social-links {
+        margin-top: 25px;
+    }
+
+    .social-links h4, hr{
+        display: none;
+    }
+
+    .link1, .link2 {
+        margin-top: 12px;
+    }
+
+    .contact-right {
+        margin-top: -10rem;
+        box-shadow: 0 5px 7px #ffffff5a;
+    }
+
+
+    /* ----- ===== -----> footer Section <----- ===== ----- */
+    .footer-section{
+        margin-top: 15rem;
+        height: 310px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        width: 300px;
+    }
+
+    .footer-center {
+        display: none;
+    }
+
+    .footer-right {
+        width: 350px;
+        margin-left: -0.1rem;
+        margin-top: -16rem;
+    }
+
+    .footer-bottom p{
+        font-size: 13px;
+    }
+
+}

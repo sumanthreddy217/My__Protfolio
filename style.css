@@ -1,0 +1,1133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------- All Pages Navbar CSS ------------------------------------- */
+
+.nav-section {
+    color: #ffffff;
+    background-color: #000000;
+    border-bottom: 0.1rem solid #dadadace;
+    border-radius: 5px;
+}
+
+.nav-cont {
+    width: 100%;
+    height: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-cont .logo a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-cont .links {
+    display: flex;
+    gap: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-cont .toggle-btn {
+    font-size: 1.3rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-cont li {
+    list-style: none;
+}
+
+.nav-cont a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.nav-cont ul li a:hover {
+    color: #1dff11;
+}
+
+.nav-cont .logo a:hover {
+    color: #4dff11;
+}
+
+
+/* ------ Dropdown-menu ------ */
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 210px;
+    background: rgba(91, 91, 91, 0.301);
+    border-radius: 21px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 170px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #fffdfd;
+    font-size: 1.1rem;
+}
+
+/* -------------------------------------------- */
+/* -------- Responsive Navbar Section --------- */
+
+/* for tablets and mobile desktop (- 768px -) */
+@media (max-width: 768px) {
+    .nav-cont {
+        height: auto;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-cont .links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-cont .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+/* for mobile screens (- 480px -) */
+@media (max-width: 480px) {
+    .nav-cont {
+        height: 45px;
+    }
+
+    .nav-cont .logo a {
+        font-size: 1.4rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-cont .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------------------- Home Page CSS ------------------------------------- */
+
+.home-body {
+    background-color: black;
+    color: white;
+}
+
+/* --- Main Div Tag --- */
+.home-section {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+/* --- Second Div Tag --- */
+.home-container {
+    display: flex;
+    height: 445px;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    margin: 0 160px 0 160px;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    box-shadow: 1px 4px 10px 1px #9e9d9d;
+}
+
+/* -- My Data -- */
+.home-content {
+    padding: 120px 20px 150px 60px;
+}
+
+.hello {
+    padding-bottom: 15px;
+    font-size: 19px;
+}
+
+.my-name {
+    font-size: 45px;
+    padding-bottom: 5px;
+}
+
+span {
+    color: #0ce80c;
+}
+
+.mini-p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.btn-1 {
+    display: flex;
+    width: 107px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 12px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+}
+
+/* -- button for mobile -- */
+.btn-a {
+    display: none;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 12px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+}
+
+.btn-1:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+
+/* -- Image -- 
+.image {
+    border: 2px solid green;
+}  */
+
+
+/* -------------------------------------------- */
+/* ---------- Responsive Home Page ----------- */
+
+
+/* For Tablets (Max Width: 768px) */
+
+@media (max-width: 768px) {
+    .home-container {
+        margin: 0 30px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .home-content {
+        padding: 60px 20px;
+    }
+
+    .btn-1 {
+        width: 107px;
+        text-align: center;
+    }
+
+    .image {
+        width: 300px;
+        padding-right: 90px;
+    }
+
+}
+
+/* ------- For Smartphones (Max Width: 480px) ------- */
+
+@media (max-width: 480px) {
+
+    /* ----- Data Box ----- */
+    .home-container {
+        margin: 0 30px;
+        padding: 15px;
+        height: auto;
+    }
+
+    .home-content {
+        padding: 30px 10px;
+    }
+
+    .my-name {
+        font-size: 32px;
+    }
+
+    .mini-p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    .btn-a {
+        display: block;
+        width: 80px;
+        padding: 3px 0 3px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .image {
+        display: none;
+    }
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------- About Page CSS ---------------------------------------- */
+
+.about-body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow: scroll;
+    overflow-y: scroll;
+}
+
+.about-section {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.about-container {
+    display: flex;
+    height: 420px;
+    gap: 29px;
+    padding: 29px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 150px 0 150px;
+    border-radius: 20px;
+    border: 1px solid #ffff0049;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-container:hover {
+    border: none;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 7px #fbff00;
+}
+
+.profile-d {
+    border-radius: 15px;
+    margin-left: 15px;
+    border: 1px solid #ffffff5d;
+}
+
+/* ---- m for mobile ---- */
+.profile-m {
+    display: none;
+    border-radius: 15px;
+    margin-left: 15px;
+    border: 1px solid #ff59009a;
+}
+
+.about-content {
+    height: 340px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+
+.ab-h1 {
+    font-size: 45px;
+    color: #2229e5;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.ab-h3 {
+    width: 330px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #14ff18;
+    margin-bottom: 7px;
+}
+
+.ab-p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.info-list strong {
+    color: #69b4ff;
+}
+
+
+/* -- - -- contact me button in about section -- - -- */
+.btn-2 {
+    display: flex;
+    width: 90px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 12px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+}
+
+.btn-2:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+
+.info-list li {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------- */
+/* ---------- Responsive about section ----------- */
+
+/* Mobile Responsive */
+/* @media (max-width: 768px) {
+    .about-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: none;
+    }
+
+    .profile-d {
+        display: none;
+    }
+
+    .profile-m {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .about-content {
+        width: 400px;
+        height: auto;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .ab-h1 {
+        font-size: 30px;
+    }
+
+    .ab-h3 {
+        width: auto;
+        font-size: 1.1rem;
+    }
+
+    .ab-p {
+        font-size: 1rem;
+    }
+
+    .info-list li {
+        font-size: 1rem;
+    }
+
+    .btn-2 {
+        width: 150px;
+        margin-left: 85 px;
+        justify-content: center;
+        padding: 10px;
+    }
+} */
+
+/* -- For Smartphones (Max Width: 480px) -- */
+/* @media (max-width: 480px) {
+
+    .about-container {
+        border: none;
+    }
+
+    .about-container:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .ab-h1 {
+        font-size: 29px;
+    }
+
+    .ab-h3 {
+        font-size: 1.2rem;
+    }
+
+    .ab-p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .btn-2 {
+        font-size: 1rem;
+        padding: 8px;
+    }
+} */
+
+
+/* ------------------------------------- Education Section CSS ------------------------------------- */
+
+.education-section {
+    width: 100%;
+    height: 99vh;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.education-container {
+    height: 450px;
+    gap: 29px;
+    padding: 29px;
+    text-align: center;
+    margin: 0 150px 0 150px;
+    border-radius: 20px;
+    border: 1px solid #00ff0d5c;
+    box-shadow: 0 2px 7px #00ff0d;
+}
+
+.ed-h1 {
+    color: #0800ff;
+    font-size: 40px;
+}
+
+.education-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-boxes {
+    height: 280px;
+    padding: 30px 30px 30px 30px;
+    margin-top: 21px;
+    gap: 30px;
+    display: flex;
+}
+
+.education-box {
+    width: 310px;
+    padding: 10px 10px 0 10px;
+    border-radius: 19px;
+    border: 0.1rem solid #ffffff4c;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-box:hover {
+    border: none;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 7px #ffffffc8;
+}
+
+.education-box h3 {
+    font-size: 1.5rem;
+    color: #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.education-box p {
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.education-box strong {
+    color: #4a90e2;
+}
+
+
+
+/* ------------------------------------- Skills Section CSS ------------------------------------- */
+
+/* -- Main background container -- */
+.skills-section {
+    width: 100%;
+    height: 100vh; /* Adjust height for all screen sizes */
+    padding: 20px; /* Padding for proper spacing */
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column; /* For vertical alignment */
+    align-items: center;
+    background-color: black;
+}
+
+/* -- Glowing container -- */
+.skills-container {
+    max-width: 1000px; /* Limit width on larger screens */
+    width: 90%; /* Fit to screen on mobile */
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 9.4rem;
+    border-radius: 20px;
+    border: 1px solid #1900ff44;
+    box-shadow: 0 2px 7px #2b00ff;
+}
+
+.skills-container:hover {
+    border: none;
+}
+
+/* -- Main heading in glowing container -- */
+.skill-title {
+    font-size: 2rem; /* Adjust size for smaller screens */
+    margin-bottom: 20px;
+    color: #0800ff;
+}
+
+/* -- Skill tree container -- */
+.skills-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 45px;
+    justify-content: center;
+}
+
+/* -- Individual skill list -- */
+.tree {
+    list-style: none;
+    padding: 10px;
+    margin-top: 1.5rem;
+    width: 250px; /* Fixed width for consistent design */
+    border-radius: 15px;
+    border: 2px solid #ffffff53;
+    background: #141414; /* Subtle background for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tree:hover {
+    border: none;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #ffffff7e;
+}
+
+/* -- Skills within the tree -- */
+.tree ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 15px;
+}
+
+.tree ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 2px;
+    background: #6c757d;
+}
+
+.tree li {
+    margin: 0.8rem 0;
+    position: relative;
+    font-size: 1rem; /* Adjust font size for better readability */
+    color: white;
+}
+
+.skill {
+    display: inline-flex;
+    align-items: center;
+    background: #0800ff33; /* Glowing effect background */
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(165, 165, 165, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+
+
+/* ---------------------------------- certificates Section CSS ---------------------------------- */
+
+/* -- Main Background 100vh -- */
+.certificate-section,
+.certificate-section2 {
+    height: 98vh;
+    padding: 60px 20px;
+    background: #000000;
+}
+
+/* -- glowing container -- */
+
+.certificates {
+    height: 480px;
+    gap: 29px;
+    
+    text-align: center;
+    margin: 70px 150px 0 150px;
+    border-radius: 20px;
+    border: 1px solid #ff5e0049;
+    box-shadow: 0 2px 7px #ff6600;
+}
+
+/* -- inner certificates and title container -- */
+
+.certificates-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 20px 70px;
+}
+
+/* -- heading in glowing container -- */
+
+.cert-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0800ff;
+}
+
+/* -- container for certificates below title -- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 0 0 39px;
+}
+
+/* -- certificate cards -- */
+
+.card, .last-card {
+    width: 260px;
+    background: #000000;
+    border-radius: 10px;
+    border: 1px solid #ffffff34;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    border: none;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #ffffff33;
+}
+
+/* -- last card in three cards -- */
+
+.last-card {
+    padding: 30px 0 0 0;
+}
+
+.last-card h3{
+    padding: 0 0 25px 0;
+}
+
+/* -- project btn for last card -- */
+
+.project-btn {
+    color: #cc7575;
+    list-style: none;
+    padding: 5px;
+    margin: 20px 70px 0 70px;
+    background-color: #000000;
+    border: 1px solid #ffffff70;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: transform 0.3s ease, box-shadow 0.3s ;
+}
+
+.project-btn li a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.project-btn:hover {
+    color: #000000;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 7px #ffffffc8;
+    border: 1px solid black;
+}
+
+/* -- certificate img in cards -- */
+
+.card-image img {
+    width: 260px;
+    height: 180px;
+    display: block;
+    cursor: pointer;
+}
+
+/* -- certificates details below img -- */
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #cfcfcf;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+/* ========= mobile certificate ======== */
+.certificate-section2 {
+    display: none;
+}
+
+
+/* ---------------------------------- Contact Section CSS ---------------------------------- */
+
+.contact-section {
+    width: 100%;
+    height: 98vh;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.contact-container {
+    display: flex;
+    height: 470px;
+    gap: 29px;
+    padding: 29px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 150px 0 150px;
+    border-radius: 20px;
+    border: 1px solid #00ddff5c;
+    box-shadow: 0 2px 7px #00ddff;
+}
+
+.contact-content {
+    padding: 10px;
+}
+
+/* -- Contact Heading -- */
+.contact-h1 {
+    color: #0800ff;
+    font-size: 40px;
+}
+
+/* -- Box contains contact-left and right -- */
+.contact-box {
+    display: flex;
+    gap: 290px;
+    margin-top: 20px;
+}
+
+
+/* -- ********** -- */
+.contact-left, .contact-right {
+    padding: 15px;
+    border-radius: 13px;
+    border: 1px solid #ffffff3d;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-left:hover,
+.contact-right:hover {
+    
+    transform: translateY(-5px);
+    box-shadow: 0 5px 7px #ffffff5a;
+}
+
+.get-h3 {
+    color: #d3d3d3;
+    margin-left: 7px;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+
+/* ---- total contact left data ---- */
+
+/* --get in touch box -- */
+.contact-left {
+    width: 320px;
+    height: 270px;
+    margin-top: 40px;
+}
+
+.contact-info {
+    margin-top: 7px;
+}
+
+.contact-info p{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.contact-info strong{
+    color: #33735e;
+}
+
+.social-links {
+    padding: 5px;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.social-links i{
+    margin-right: 5px;
+}
+
+.social-links a{
+    border: 1px solid #ffffff78;
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin-left: 30px;
+    color: #dad9d9;
+    text-decoration: none;
+}
+
+.link1 {
+    margin-top: 12px;
+}
+
+.link2 {
+    margin-top: 12px;
+}
+
+.social-links i{
+    color: #fff;
+}
+
+
+/* ---- total contact right data ---- */
+
+/* -- message me border box -- */
+.contact-right {
+    width: 370px;
+    height: 340px;
+}
+
+/* -- contact right box text field -- */
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2%;
+}
+
+/* -- inputs in right side box -- */
+.inputs, .message-box {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* -- name and email boxes -- */
+.inputs {
+    height: 40px;
+    padding-left: 7px;
+    background-color: transparent;
+}
+
+/* -- text input box -- */
+.message-box {
+    height: 110px;
+    padding: 5px 7px;
+    background-color: transparent;
+}
+
+.inputs::placeholder,
+.message-box::placeholder {
+    color: #c3c3c3;
+}
+
+/* -- submt button -- */
+.submit-btn {
+    width: 60px;
+    padding: 3px 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ffffffac;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    background-color: #ffffff85;
+    color: black;
+}
+
+
+
+
+/* ---------------------------------- Footer Section CSS ---------------------------------- */
+
+/* -- main section -- */
+.footer-section {
+    width: 100%;
+    height: 260px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* -- container in footer -- */
+.footer-container {
+    display: flex;
+    gap: 260px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* -- contact me - left side of footer -- */
+.footer-left {
+    padding: 10px;
+}
+
+
+.footer-left p{
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.footer-left strong{
+    font-size: 17px;
+    color: #c2c2c2;
+}
+
+/* -- Quick Link - center of footer -- */
+.footer-center {
+    padding: 10px;
+}
+
+.footer-center ul li{
+    font-size: 17px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-center a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-center a:hover{
+    color: #00ff33;
+}
+
+/* -- Follow Me - right side of footer -- */
+.footer-right {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.footer-right h3{
+    margin-left: 7px;
+}
+
+/* -- social icons -- */
+.social-icon a{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-icon a:hover{
+    color: #00ff33;
+}
+
+/* -- common heading for three boxes -- */
+.footh1 {
+    font-size: 21px;
+    color: #484eff;
+    margin-bottom: 10px;
+}
+
+/* -- bottom of the footer -- */
+.footer-bottom {
+    border-top: 1px solid #555;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* ----------------------------------------------------- */
+/* ---------- Responsive Footer Section ----------- */
+
+/* -- For Smartphones (Max Width: 480px) -- */
+
+
