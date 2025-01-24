@@ -50,7 +50,7 @@
 
     /* ----- ===== -----> Education Section <----- ===== ----- */
     .education-section {
-        display: flex;
+        display: none;
         margin-top: 1rem;
     
     }
@@ -78,7 +78,9 @@
 
 
     /* ----- ===== -----> skills Section <----- ===== ----- */
-    
+    .skills-section {
+        display:none;
+    }
     .skills-container {
         box-shadow:none;
         border:none;
@@ -116,7 +118,7 @@
 
     /* ----- ===== -----> mobile - certificate Section <----- ===== ----- */
     .certificate-section2 {
-        display: block;
+        display: none;
         margin-top: 0rem;
     }
 
@@ -137,7 +139,7 @@
 
     /* ----- ===== -----> contact Section <----- ===== ----- */
     .contact-section {
-        display: fex;
+        display: none;
 
     }
 
@@ -180,6 +182,7 @@
 
     /* ----- ===== -----> footer Section <----- ===== ----- */
     .footer-section{
+        display:none;
         margin-top: 15rem;
         height: 310px;
     }
