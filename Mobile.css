@@ -50,7 +50,7 @@
 
     /* ----- ===== -----> Education Section <----- ===== ----- */
     .education-section {
-        display: none;
+        display: flex;
         margin-top: 1rem;
     
     }
